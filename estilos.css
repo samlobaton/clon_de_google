@@ -1,0 +1,191 @@
+body{
+    margin:0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width: 100%; /*Que significa el 100%? Que es header usará el 100% del espacio de la pagina*/
+    height: 60px;
+}
+
+header nav {
+    /*Estos comandos recorren a lista dentro del headre y posteriormente nav hacia la derecha*/
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto; /* alto automatico, que se ajuste solo*/
+    display: flex; /*Menú en horizontal*/
+    list-style: none; /*Para quitar los bullets de la lista*/
+    justify-content: center;
+    align-items: center;
+}
+/*revisar que son los items que no avanzamos*/
+nav .nav-right-section a{ /*vamos a estilizar los hipervinculos <a> del header*/
+    text-decoration: none; /*quita las rayitas de los hipervinculos*/
+    margin-right: 25px; /*para que los textos se separen*/
+    color: black;
+}
+/*para el icono*/
+nav .nav-right-section .menu-icon{
+    background-image: url('https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png'); /*vamos a jalar la imagen del icono desde la red*/
+    width: 27px;
+    height: 27px;
+    background-size: contain; /*para que la imagen se ajuste al contenedor*/
+    background-position: center;
+    background-repeat: no-repeat; /*para que es esto?*/
+}
+/*Para redondear la imagen de mi foto*/
+/*Ponerle la foto en mejor calidad*/
+nav .nav-right-section img{
+    border-radius: 80px; /* foto redondita*/
+    margin-left: 15px;
+    width: 35px; 
+    height: 35px;
+}
+
+main{ margin-top: 25px;
+    text-align: center;/*para que todo se ponga al centro*/
+}
+/* Cómo saber cuando usar porcentajes o pixeles*/
+main .main-logo {
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    padding-left: 400px;  
+     
+}
+/*para modificar la imagen*/
+main .main-logo img{
+    width: 310px;
+    height: 110px;
+}
+/*personalización barra de búsqueda*/
+main .main-input{
+    width: 530px;
+    margin:0 auto;
+    margin-bottom: 35px;
+    padding-left: 450px;
+}
+/*especificaciones para la cajita de texto*/
+main .main-input input{
+    width: 450px;    
+    height: 40px;
+    border:none;
+    outline: none; /*para que no se marque la caja de texto al ponerle el curso encima*/
+}
+
+/*peronalización del contenedor que  contiene la caja de texto*/
+main .main-input-container{
+    width: 525px; /*es para el espacio que ocupará nuestra caja de busqueda*/
+    border: 1px solid #dfe1e5;
+    border-radius: 100px;/*para suavizar las esquinas*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*para darle el efecto de sobresalir a la caja de texto*/
+/*hover nos permite dar el efecto de resaltado*/
+main .main-input-container:hover{
+box-shadow: 0 1px 6px 0px #20212447; /*cada numero se relaciona con la sombra de un lado de la caja la primera componente es para arriba, la segunda derecha, la tercera abajo y la ultima izquierda, se puede cambiar el color de la sombra*/
+} 
+/*vamos a agregar los estilos al icono de la lupa*/
+main .main-input .search-icon{
+    background-image: url('https://img.icons8.com/android/24/000000/search.png');
+    width: 18px;
+    height: 18px;
+    padding-left: 25px;
+    background-repeat: no-repeat;/*para que no se repita el background*/
+    background-position: center;
+    background-size: contain; /*para que el tamaño se ajuste al del contenedor*/
+}
+/*microfono*/
+main .main-input .micro-icon{
+background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png');
+width: 18px;
+    height: 18px;
+    padding-left:4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+/*camara*/
+main .main-input .cam-icon{
+    background-image: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQU9EB56qp8B5qgt89OtkGpN86KFafBM7cBixk1nXOs7ukEVbJE');
+    width: 22px;
+        height: 22px;
+        padding-right: 35px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+/*botones*/
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto; 
+    padding-left: 450px;
+}
+
+/*para personalizar el espacio donde están los botones*/
+main ,.main-buttons div{
+    display: inline-block; 
+    /*para poner los botones horizontales*/
+}
+/*para personalizar el boton*/
+main .main-buttons button{
+height: 36px;
+background-color: #f8f9fa;
+border: 0;
+font-size: 14px;
+color: #5f6368;
+border-radius: 6px;
+padding:0 15px;
+margin-right: 12px;
+
+}
+/*para animar los botones*/
+main .main-buttons button:hover{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 0.5px 1px 0 #5f6368; 
+    cursor:pointer; /*para que al acercarnos al botón se ponga manita*/
+}
+/*footer*/
+footer{
+    width: 2050px;
+    height: 50px;
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0; /*para que lo lleve al piso*/
+    display: grid; /*para que es?*/
+    grid-template-columns: 1fr 1fr;/*para que divida el footer en dos columnas*/
+    align-items: center;
+    font-size: 15px;
+    border-top: 1px solid #e4e4e4;
+}
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer-left{
+    justify-self: left; /*el contenido se justifica a la izquierda*/
+}
+
+footer  .footer-right{
+    justify-self: right;
+}
+/*para lo que está dentro las listas*/
+footer ul li a{
+margin:10px;
+color: #5f6368;
+text-decoration: none;
+}
+
+
+
+

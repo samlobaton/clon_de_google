@@ -1,0 +1,93 @@
+<!--se llama index porque se acostumbra a que así se llame la pagina de inicio-->
+<!--con poner !+Enter automaticamente se crea una estructura html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos.css" rel="stylesheet">
+    <title>Google</title>
+</head>
+<body>
+    <header> <!--encabezado(lo de arriba)-->
+        <nav><!--Que es esta etiqueta? representa una seccion cuyo porpocito es proporcionar elaces de navegación-->
+            <ul class="nav-right-section"><!-- parte derecha del navegador-->
+                <!--li*n creará n li's-->
+                <li><a href="https://mail.google.com/mail/&ogbl">Gmail</a></li>
+                <li><a href="https://www.google.com/imghp?hl=es&ogbl">Imágenes</a></li>
+                <li class="menu-icon"><a href="#"></a></li><!--Icono-->
+                <li><a href=""> <img src="https://lh3.googleusercontent.com/ogw/AGvuzYYRVMlOv-GiE1ZwmMx-02avCaV9P6Uwlse-qdnPmA=s32-c-mo"> </a> </li> <!--para este ultimo copiamos la direccion de la imagen-->
+            </ul>
+        </nav>
+    </header>
+    <main> <!--cuerpo-->
+        <!--el cuerpo está dividido en tres secciones-->
+<section class="main-logo"><!--logo-->
+<img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+</section>
+<!--barra de busqueda-->
+<section class="main-input"><!--entrada de datos-->
+    <div class="main-input-container"><!--nos deja hacer una segmentación de la seccion de la barra de búsqueda-->
+        <span class="search-icon"></span><!--para la lupa--> <!--que es, sirve como contenedor?-->
+        <input type="text">
+        <a class="micro-icon" href=""></a>
+        <a class="cam-icon" href=""></a>
+    </div>
+</section>
+<!--botones-->
+<section class="main-buttons">
+    <div><button>
+        Buscar con Google
+    </button></div>
+    <div><button>
+        Voy a tener suerte
+    </button></div>
+</section>
+    </main>
+    <footer>
+        <!--lista izquierda-->
+        <ul class="footer-left">
+            <li>
+                <a href="https://about.google/?utm_source=google-BO&utm_medium=referral&utm_campaign=hp-footer&fg=1">
+                    Sobre Google
+                </a>
+            </li>
+            <li>
+                <a href="https://www.google.com/intl/es_bo/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">
+                    Publicidad            
+                </a>
+            </li>
+            <li>
+                <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">
+                    Negocios
+                </a>
+            </li>
+            <li>
+                <a href="https://google.com/search/howsearchworks/?fg=1">
+                    Cómo funciona la Búsqueda
+                </a>
+            </li>
+        </ul> 
+        <!--lista derecha-->
+        <ul class="footer-left">
+            <li>
+                <a href="https://policies.google.com/privacy?hl=es-BO&fg=1">
+                    Privacidad
+                </a>
+            </li>
+            <li>
+                <a href="https://policies.google.com/terms?hl=es-BO&fg=1">
+                    Condiciones
+                </a>
+            </li>
+            <li>
+                <a href="#"> <!--el # es para tener un hipervinculo muerto, se ve como hipervinculo, pero no lleva a ningún lado-->
+                    Preferencias
+                </a>
+            </li>
+                
+            
+        </ul> 
+    </footer><!--pie de pagina-->
+</body>
+</html>
